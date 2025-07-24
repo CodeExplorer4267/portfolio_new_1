@@ -21,8 +21,8 @@ const Navbar = () => {
                <p className='nav-contents'>Education</p>
            </div>
            <div className='flex gap-5'>
-               <FaGithub className='text-2xl cursor-pointer hover:text-blue-800' />
-               <FaLinkedin className='text-2xl cursor-pointer hover:text-blue-800' />
+               <a href="https://github.com/CodeExplorer4267"><FaGithub className='text-2xl cursor-pointer' /></a>
+               <a href=""><FaLinkedin className='text-2xl cursor-pointer' /></a>
            </div>
        </div>
     </nav>
