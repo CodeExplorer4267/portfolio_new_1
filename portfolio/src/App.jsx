@@ -5,6 +5,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Particles from "./components/Animations/Particles"
+
 function App() {
   return (
     <>
