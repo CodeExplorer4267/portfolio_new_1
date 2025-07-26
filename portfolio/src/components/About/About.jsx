@@ -1,23 +1,52 @@
 import React from "react";
 import TextType from "../../components/Animations/TextType";
+import { TbCloudDownload } from "react-icons/tb";
+import Tilt from "react-parallax-tilt";
+import "./About.css"
 const About = () => {
   return (
     <>
-      <div className="flex flex-row justify-evenly items-center">
-        <div className="text-white flex flex-col items-center w-[500px]">
-          <h1>I am <span style={{color:'rgb(130, 4, 255)'}}>Rupam Bhadra</span></h1>
-          <TextType
-            text={["I am a coder", "I am a full stack web developer", "Happy coding!"]}
-            typingSpeed={75}
-            pauseDuration={1500}
-            showCursor={true}
-            cursorCharacter="|"
-          />
-          <p>I am a full stack developer with over 2 years of experience in building scalable web applications. Skiller in both frontend and backend development, i specialize in MERN stack and other modern technologies to create seamless user experience and efficient solutions.</p>
+      <div className="flex flex-row w-[100%] justify-evenly items-center">
+        <div className="text-white flex gap-6 flex-col items-start w-[500px]">
+          <h1 className="text-5xl font-bold">
+            I am <span style={{
+              color:'rgb(130,4,255)'
+            }}>Rupam Bhadra</span>
+          </h1>
+          <div className="text-2xl font-semibold text-white-400">
+            <TextType
+              text={[
+                "I am a coder",
+                "I am a full stack web developer",
+                "Happy coding!",
+              ]}
+              typingSpeed={75}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+            />
+          </div>
+          <p>
+            I am a full stack developer with over 2 years of experience in
+            building scalable web applications. Skilled in both frontend and
+            backend development, i specialize in MERN stack and other modern
+            technologies to create seamless user experience and efficient
+            solutions.
+          </p>
+            <button className="w-[200px] h-[50px] bg-purple-600 text-white rounded-[20px] font-semibold">
+              Download CV
+              <TbCloudDownload className="inline ml-2 text-2xl" />
+            </button>
         </div>
+        <Tilt>
         <div className="second">
-          <img src='/mypic.jpg' alt="Rupam Bhadra" className="rounded-full w-[300px] h-[300px] border-3 border-purple-700" />
+          <img
+            src="/mypic.jpg"
+            alt="Rupam Bhadra"
+            className="rounded-full w-[275px] h-[275px] border-3 border-purple-700"
+          />
         </div>
+        </Tilt>
       </div>
     </>
   );
