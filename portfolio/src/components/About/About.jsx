@@ -2,7 +2,8 @@ import React from "react";
 import TextType from "../../components/Animations/TextType";
 import { TbCloudDownload } from "react-icons/tb";
 import Tilt from "react-parallax-tilt";
-import "./About.css"
+import "./About.css";
+import {motion} from "framer-motion";
 import GradientText from "../../components/Animations/Gradient-Text";
 const About = () => {
   return (
@@ -10,14 +11,15 @@ const About = () => {
       <div className="flex flex-row w-[100%] justify-evenly items-center">
         <div className="text-white flex gap-6 flex-col items-start w-[500px]">
           <h1 className="text-5xl font-bold">
-            I am <GradientText
-  colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-  animationSpeed={3}
-  showBorder={false}
-  className="custom-class"
->
-  Rupam Bhadra
-</GradientText>
+            I am{" "}
+            <GradientText
+              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="custom-class"
+            >
+              Rupam Bhadra
+            </GradientText>
           </h1>
           <div className="text-2xl font-semibold text-white-400">
             <TextType
@@ -39,19 +41,20 @@ const About = () => {
             technologies to create seamless user experience and efficient
             solutions.
           </p>
-            <button className="w-[200px] h-[50px] bg-purple-600 text-white rounded-[20px] font-semibold floatEffect mt-1.5">
-              Download CV
-              <TbCloudDownload className="inline ml-2 text-2xl" />
-            </button>
+          <motion.button whileHover={{scale:1.1}} whileTap={{scale:0.9}} className="w-[200px] h-[50px] bg-purple-600 text-white rounded-[20px] font-semibold floatEffect mt-1.5">
+            Download CV
+            <TbCloudDownload className="inline ml-2 text-2xl" />
+          </motion.button>
+
         </div>
         <Tilt>
-        <div className="second">
-          <img
-            src="/mypic.jpg"
-            alt="Rupam Bhadra"
-            className="rounded-full w-[275px] h-[275px] border-3 border-purple-700 floatEffect"
-          />
-        </div>
+          <div className="second">
+            <img
+              src="/mypic.jpg"
+              alt="Rupam Bhadra"
+              className="rounded-full w-[275px] h-[275px] border-3 border-purple-700 floatEffect"
+            />
+          </div>
         </Tilt>
       </div>
     </>
