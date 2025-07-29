@@ -1,13 +1,19 @@
 import React from "react";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
+import ChromaGrid from "../Animations/Skills-grid";
+
 const Skills = () => {
   return (
     <>
-      <motion.div initial={{
-        opacity:0
-      }} whileInView={{
-        opacity:1
-      }} className="flex flex-col justify-center items-center pt-[30px] pb-[30px] gap-[30px]">
+      <motion.div
+        initial={{
+          opacity: 0,
+        }}
+        whileInView={{
+          opacity: 1,
+        }}
+        className="flex flex-col justify-center items-center pt-[30px] pb-[30px] gap-[30px] w-[100%]"
+      >
         <h1 className="text-white text-4xl font-bold">Skills</h1>
         <p className="text-1xl font-semibold text-white w-1/2">
           As a passionate full stack developer, I have honed a diverse set of
@@ -16,11 +22,19 @@ const Skills = () => {
           logic and APIs, I leverage modern tools and frameworks to deliver
           efficient, scalable, and high-performance web applications.
         </p>
-        <div className="grid grid-rows-3 grid-cols-2 row-gap-4 col-gap-4 p-10">
-          <div className="h-30 w-auto border-red-500 text-white">Hello</div>
-          <div className="h-30 w-auto border-red-500 text-white">Hello</div>
-          <div className="h-30 w-auto border-red-500 text-white">Hello</div>
-          <div className="h-30 w-auto border-red-500 text-white">Hello</div>
+        <div className="w-1/2 flex flex-row justify-center items-center flex-wrap gap-15 mt-[15px] text-white">
+          <div className="w-[250px] h-[250px] bg-[#050414] border-3 border-amber-300 rounded-[20px]">
+            Hello
+          </div>
+          <div className="w-[250px] h-[250px] bg-[#050414] border-3 border-amber-300">
+            Hello
+          </div>
+          <div className="w-[250px] h-[250px] bg-[#050414] border-3 border-amber-300">
+            Hello
+          </div>
+          <div className="w-[250px] h-[250px] bg-[#050414] border-3 border-amber-300">
+            Hello
+          </div>
         </div>
       </motion.div>
     </>
