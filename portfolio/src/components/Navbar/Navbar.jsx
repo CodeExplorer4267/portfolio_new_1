@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import './Navbar.css'
 const Navbar = () => {
   return (
-    <nav className='bg-transparent fixed top-0 left-0 w-full'>
+    <nav className='bg-transparent h-[65px] top-0 left-0 w-full'>
        <div className='text-white flex justify-evenly items-center p-5'>
            <div className='text-1xl font-bold cursor-pointer'>
                <span style={{ color: 'rgb(130, 4, 255)' }}>&lt;</span>

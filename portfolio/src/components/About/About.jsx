@@ -16,7 +16,7 @@ const fadeInRight={
 const About = () => {
   return (
     <>
-      <div className="flex flex-row w-[100%] justify-evenly items-center">
+      <div className="flex flex-row w-[100%] justify-evenly items-center pt-[30px] pb-[30px]">
         <motion.div 
         variants={fadeInLeft}
         initial="hidden"
@@ -54,7 +54,7 @@ const About = () => {
             technologies to create seamless user experience and efficient
             solutions.
           </p>
-          <button className="w-[200px] h-[50px] bg-purple-600 text-white rounded-[20px] font-semibold floatEffect mt-1.5">
+          <button className="w-[200px] h-[50px] bg-purple-600 text-white rounded-[20px] font-semibold floatEffect mt-1.5 ">
             Download CV
             <TbCloudDownload className="inline ml-2 text-2xl" />
           </button>
