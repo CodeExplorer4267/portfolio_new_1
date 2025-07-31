@@ -1,0 +1,26 @@
+.card-animation{
+    position: relative;
+    height:350px;
+    width:350px;
+    padding:4px;
+    background-color: #2f2f2f;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.card-animation::after{
+    content:'';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    height:600px;
+    width:250px;
+    background: linear-gradient(45deg, #40ffaa, #4079ff);
+    z-index: 0;
+    animation:move 2s infinite;
+}
+@keyframes move {
+    100%{
+        transform: translate(-50%,-50%) rotate(225deg);
+    }
+}
