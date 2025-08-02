@@ -3,26 +3,28 @@ import TextType from "../../components/Animations/TextType";
 import { TbCloudDownload } from "react-icons/tb";
 import Tilt from "react-parallax-tilt";
 import "./About.css";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import GradientText from "../../components/Animations/Gradient-Text";
-const fadeInLeft={
-    hidden:{opacity:0,x:-50},
-    visible:{opacity:1,x:0}
-}
-const fadeInRight={
-    hidden:{opacity:0,x:50},
-    visible:{opacity:1,x:0}
-}
+
+const fadeInLeft = {
+  hidden: { opacity: 0, x: -50 },
+  visible: { opacity: 1, x: 0 },
+};
+const fadeInRight = {
+  hidden: { opacity: 0, x: 50 },
+  visible: { opacity: 1, x: 0 },
+};
 const About = () => {
   return (
     <>
       <div className="flex flex-row w-[100%] justify-evenly items-center pt-[30px] pb-[30px]">
-        <motion.div 
-        variants={fadeInLeft}
-        initial="hidden"
-        animate="visible"
-        transition={{duration:1,ease:"easeOut"}}
-        className="text-white flex gap-7 flex-col items-start w-[500px]">
+        <motion.div
+          variants={fadeInLeft}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="text-white flex gap-7 flex-col items-start w-[500px]"
+        >
           <h1 className="text-5xl font-bold">
             I am{" "}
             <GradientText
@@ -58,7 +60,6 @@ const About = () => {
             Download CV
             <TbCloudDownload className="inline ml-2 text-2xl" />
           </button>
-
         </motion.div>
         <Tilt>
           <motion.div
