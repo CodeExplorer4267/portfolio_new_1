@@ -1,6 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import GradientText from "../Animations/Gradient-Text";
+import { SkillsInfo } from "../../constants";
 const Projects = () => {
   return (
     <>
@@ -15,10 +16,19 @@ const Projects = () => {
         </GradientText>
         <div className="first w-[90%] h-[400px] flex flex-row justify-evenly items-center">
           <div className="w-[40%] flex flex-row justify-center items-center">
-            <img src="./laptop_img.png" alt="" className="h-auto w-[300px]" />
+            <img
+              src="./laptop_img.png"
+              alt=""
+              className="h-auto w-[350px] relative"
+            />
+            <img
+              src="./Project_front_1.png"
+              alt=""
+              className="h-[155px] w-[244px] top-[266%] absolute"
+            />
           </div>
           <div className="w-[5px] h-[100%] bg-purple-700"></div>
-          <div className="flex flex-col items-center gap-[20px] w-[40%] p-[5px]">
+          <div className="flex flex-col items-center gap-[40px] w-[40%] p-[5px]">
             <h2 className="text-3xl bg-linear-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent font-bold">
               Online Examination Website
             </h2>
@@ -33,12 +43,54 @@ const Projects = () => {
               online assessments with features like result uploads, and answer
               reviews.Teachers can also upload materials for students.
             </p>
-            <div className="flex flex-row gap-[1px]">
-              <img src="./skills.png" alt="" className="h-[110px] w-auto"/>
-              <img src="./skills.png" alt="" className="h-[110px] w-auto"/>
-              <img src="./skills.png" alt="" className="h-[110px] w-auto"/>
-              <img src="./skills.png" alt="" className="h-[110px] w-auto"/>
-              <img src="./skills.png" alt="" className="h-[110px] w-auto"/>
+            <div className="flex flex-row gap-6 justify-center items-center">
+              <h2 className="text-violet-600 font-bold text-[20px]">
+                Tech stack:
+              </h2>
+              <div className="flex flex-col justify-center items-center gap-1">
+                <img
+                  src={SkillsInfo[0].skills[4].logo}
+                  alt=""
+                  className="h-[40px] w-auto"
+                />
+                <p className="text-white text-[14px] bold">React Js</p>
+              </div>
+              <div className="flex flex-col justify-center items-center gap-1">
+                <img
+                  src={SkillsInfo[1].skills[1].logo}
+                  alt=""
+                  className="h-[40px] w-auto"
+                />
+                <p className="text-white text-[14px] bold">Node Js</p>
+              </div>
+              <div className="flex flex-col justify-center items-center gap-1">
+                <img
+                  src={SkillsInfo[1].skills[2].logo}
+                  alt=""
+                  className="h-[40px] w-auto"
+                />
+                <p className="text-white text-[14px] bold">Express Js</p>
+              </div>
+              <div className="flex flex-col justify-center items-center gap-1">
+                <img
+                  src={SkillsInfo[1].skills[3].logo}
+                  alt=""
+                  className="h-[40px] w-auto"
+                />
+                <p className="text-white text-[14px] bold">My SQL</p>
+              </div>
+              <div className="flex flex-col justify-center items-center gap-1">
+                <img
+                  src="./socket_Io_logo.png"
+                  alt=""
+                  className="h-[40px] w-auto"
+                />
+                <p className="text-white text-[14px] bold">Socket IO</p>
+              </div>
+              <div className="flex flex-col justify-center items-center gap-1">
+                <img src="./jwt_logo.png" alt="" className="h-[40px] w-auto" />
+                <p className="text-white text-[14px] bold">JWT</p>
+              </div>
             </div>
           </div>
         </div>
