@@ -7,7 +7,6 @@ import About from "./components/About/About";
 import Particles from "./components/Animations/Particles"
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
-
 function App() {
   return (
     <>

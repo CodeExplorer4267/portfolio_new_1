@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import GradientText from "../Animations/Gradient-Text";
 import { SkillsInfo } from "../../constants";
+import { motion } from "framer-motion";
 const Projects = () => {
   return (
     <>
@@ -43,7 +44,7 @@ const Projects = () => {
               online assessments with features like result uploads, and answer
               reviews.Teachers can also upload materials for students.
             </p>
-            <div className="flex flex-row gap-6 justify-center items-center">
+            <div className="flex flex-row gap-6 justify-center items-center text-center">
               <h2 className="text-violet-600 font-bold text-[20px]">
                 Tech stack:
               </h2>
@@ -53,7 +54,7 @@ const Projects = () => {
                   alt=""
                   className="h-[40px] w-auto"
                 />
-                <p className="text-white text-[14px] bold">React Js</p>
+                <p className="text-white text-[14px] font-bold">React Js</p>
               </div>
               <div className="flex flex-col justify-center items-center gap-1">
                 <img
@@ -61,7 +62,7 @@ const Projects = () => {
                   alt=""
                   className="h-[40px] w-auto"
                 />
-                <p className="text-white text-[14px] bold">Node Js</p>
+                <p className="text-white text-[14px] font-bold">Node Js</p>
               </div>
               <div className="flex flex-col justify-center items-center gap-1">
                 <img
@@ -69,7 +70,7 @@ const Projects = () => {
                   alt=""
                   className="h-[40px] w-auto"
                 />
-                <p className="text-white text-[14px] bold">Express Js</p>
+                <p className="text-white text-[14px] font-bold">Express Js</p>
               </div>
               <div className="flex flex-col justify-center items-center gap-1">
                 <img
@@ -77,7 +78,7 @@ const Projects = () => {
                   alt=""
                   className="h-[40px] w-auto"
                 />
-                <p className="text-white text-[14px] bold">My SQL</p>
+                <p className="text-white text-[14px] font-bold">My SQL</p>
               </div>
               <div className="flex flex-col justify-center items-center gap-1">
                 <img
@@ -85,11 +86,13 @@ const Projects = () => {
                   alt=""
                   className="h-[40px] w-auto"
                 />
-                <p className="text-white text-[14px] bold">Socket IO</p>
+                <p className="text-white text-[14px] font-bold">Socket IO</p>
               </div>
               <div className="flex flex-col justify-center items-center gap-1">
                 <img src="./jwt_logo.png" alt="" className="h-[40px] w-auto" />
-                <p className="text-white text-[14px] bold">JWT</p>
+                <p className="text-white text-[14px] font-bold">
+                  Json Web Token
+                </p>
               </div>
             </div>
           </div>
