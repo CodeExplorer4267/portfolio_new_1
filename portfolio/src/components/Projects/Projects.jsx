@@ -3,6 +3,10 @@ import "./Projects.css";
 import GradientText from "../Animations/Gradient-Text";
 import { SkillsInfo } from "../../constants";
 import { motion } from "framer-motion";
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
+import "animate.css/animate.compat.css";
+import ScrollAnimation from "react-animate-on-scroll";
 const Projects = () => {
   return (
     <>
@@ -13,21 +17,22 @@ const Projects = () => {
           showBorder={false}
           className="custom-class"
         >
-          <h1 className="text-4xl font-bold mb-[30px]">Projects</h1>
+          <h1 className="text-4xl font-bold mb-[40px]">Projects</h1>
         </GradientText>
         <div className="first w-[90%] h-[400px] flex flex-row justify-evenly items-center">
-          <div className="w-[40%] flex flex-row justify-center items-center">
-            <img
-              src="./laptop_img.png"
-              alt=""
-              className="h-auto w-[350px] relative"
-            />
-            <img
-              src="./Project_front_1.png"
-              alt=""
-              className="h-[155px] w-[244px] top-[266%] absolute"
-            />
-          </div>
+            <div className="w-[40%] flex flex-row justify-center items-center">
+              <img
+                src="./laptop_img.png"
+                alt=""
+                className="h-auto w-[350px] relative floatEffect"
+              />
+              <img
+                src="./Project_front_1.png"
+                alt=""
+                className="h-[155px] w-[244px] top-[266%] absolute floatEffect"
+              />
+            </div>
+          <FaArrowAltCircleRight className="text-purple-700 text-[50px] absolute right-[48%] top-[275%] z-10" />
           <div className="w-[5px] h-[100%] bg-purple-700"></div>
           <div className="flex flex-col items-center gap-[40px] w-[40%] p-[5px]">
             <h2 className="text-3xl bg-linear-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent font-bold">
@@ -196,17 +201,18 @@ const Projects = () => {
               </div>
             </div>
           </div>
+          <FaArrowAltCircleLeft className="text-purple-700 text-[50px] absolute right-[48.5%] top-[327%] z-10" />
           <div className="w-[5px] h-[100%] bg-purple-700"></div>
           <div className="w-[40%] flex flex-row justify-center items-center">
             <img
               src="./laptop_img.png"
               alt=""
-              className="h-auto w-[350px] relative"
+              className="h-auto w-[350px] relative floatEffect"
             />
             <img
               src="./social_project_logo.png"
               alt=""
-              className="h-[155px] w-[244px] top-[321%] absolute"
+              className="h-[155px] w-[244px] top-[321%] absolute floatEffect"
             />
           </div>
         </div>
@@ -215,21 +221,30 @@ const Projects = () => {
             <img
               src="./laptop_img.png"
               alt=""
-              className="h-auto w-[350px] relative"
+              className="h-auto w-[350px] relative floatEffect"
             />
             <img
               src="./food_del_screen_view.png"
               alt=""
-              className="h-[155px] w-[244px] top-[376%] absolute"
+              className="h-[155px] w-[244px] top-[376%] absolute floatEffect"
             />
           </div>
+          <FaArrowAltCircleRight className="text-purple-700 text-[50px] absolute right-[48%] top-[385%] z-10" />
           <div className="w-[5px] h-[100%] bg-purple-700"></div>
           <div className="flex flex-col items-center gap-[40px] w-[40%] p-[5px]">
             <h2 className="text-3xl bg-linear-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent font-bold">
               Foodie-Fiesta
             </h2>
             <p className="text-white text-[14px] block">
-              I developed a full-stack Food Delivery Web Application using the MERN stack (MongoDB, Express.js, React.js, Node.js) that allows users to browse a dynamic menu, add items to their cart, place orders with address input, and track order status. The app features secure user authentication with JWT, profile management including profile picture updates, and a dummy payment system. An admin panel enables management of food items and real-time order status updates. Image uploads are handled via Multer, and Context API is used for efficient state management across components.
+              I developed a full-stack Food Delivery Web Application using the
+              MERN stack (MongoDB, Express.js, React.js, Node.js) that allows
+              users to browse a dynamic menu, add items to their cart, place
+              orders with address input, and track order status. The app
+              features secure user authentication with JWT, profile management
+              including profile picture updates, and a dummy payment system. An
+              admin panel enables management of food items and real-time order
+              status updates. Image uploads are handled via Multer, and Context
+              API is used for efficient state management across components.
             </p>
             <div className="flex flex-row gap-6 justify-center items-center text-center w-[100%]">
               <h2 className="text-violet-600 font-bold text-[20px]">
@@ -261,25 +276,19 @@ const Projects = () => {
               </div>
               <div className="flex flex-col justify-center items-center gap-1">
                 <img
-                  src={SkillsInfo[1].skills[3].logo}
+                  src={SkillsInfo[1].skills[4].logo}
                   alt=""
                   className="h-[40px] w-auto"
                 />
-                <p className="text-white text-[14px] font-bold">My SQL</p>
+                <p className="text-white text-[14px] font-bold">Mongo DB</p>
               </div>
               <div className="flex flex-col justify-center items-center gap-1">
                 <img
-                  src="./socket_Io_logo.png"
+                  src={SkillsInfo[0].skills[1].logo}
                   alt=""
                   className="h-[40px] w-auto"
                 />
-                <p className="text-white text-[14px] font-bold">Socket IO</p>
-              </div>
-              <div className="flex flex-col justify-center items-center gap-1">
-                <img src="./jwt_logo.png" alt="" className="h-[40px] w-auto" />
-                <p className="text-white text-[14px] font-bold">
-                  Json Web Token
-                </p>
+                <p className="text-white text-[14px] font-bold">CSS</p>
               </div>
             </div>
           </div>
