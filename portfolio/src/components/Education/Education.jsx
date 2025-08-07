@@ -12,8 +12,12 @@ const Education = () => {
       >
         <h1 className="text-4xl font-bold">Education</h1>
       </GradientText>
-      <div className="flex flex-row justify-center items-center w-[90%] gap-[30px]">
-
+      <div className="flex flex-row justify-center items-center w-[90%] gap-[30px] h-[300px]">
+        <div className="flex flex-row justify-center items-center ">
+          <img src="./school_logo.png" alt="" className="h-[180px] rounded-full" />
+        </div>
+        <div className="h-[100%] w-[5px] bg-purple-700"></div>
+        <div></div>
       </div>
     </div>
   );

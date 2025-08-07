@@ -7,6 +7,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import "animate.css/animate.compat.css";
 import ScrollAnimation from "react-animate-on-scroll";
+
 const Projects = () => {
   return (
     <>
@@ -20,18 +21,18 @@ const Projects = () => {
           <h1 className="text-4xl font-bold mb-[40px]">Projects</h1>
         </GradientText>
         <div className="first w-[90%] h-[400px] flex flex-row justify-evenly items-center">
-            <div className="w-[40%] flex flex-row justify-center items-center">
-              <img
-                src="./laptop_img.png"
-                alt=""
-                className="h-auto w-[350px] relative floatEffect"
-              />
-              <img
-                src="./Project_front_1.png"
-                alt=""
-                className="h-[155px] w-[244px] top-[266%] absolute floatEffect"
-              />
-            </div>
+          <div className="w-[40%] flex flex-row justify-center items-center">
+            <img
+              src="./laptop_img.png"
+              alt=""
+              className="h-auto w-[350px] relative floatEffect"
+            />
+            <img
+              src="./Project_front_1.png"
+              alt=""
+              className="h-[155px] w-[244px] top-[266%] absolute floatEffect"
+            />
+          </div>
           <FaArrowAltCircleRight className="text-purple-700 text-[50px] absolute right-[48%] top-[275%] z-10" />
           <div className="w-[5px] h-[100%] bg-purple-700"></div>
           <div className="flex flex-col items-center gap-[40px] w-[40%] p-[5px]">
