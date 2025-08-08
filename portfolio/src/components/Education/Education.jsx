@@ -4,6 +4,7 @@ import GradientText from "../Animations/Gradient-Text";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { SkillsInfo } from "../../constants";
+
 const Education = () => {
   return (
     <div className="flex flex-col justify-center items-center pt-[20px] pb-[30px] w-[100%]">
@@ -23,7 +24,7 @@ const Education = () => {
             className="h-[180px] rounded-full"
           />
         </div>
-        <FaArrowAltCircleRight className="text-purple-700 text-[50px] absolute right-[48%] top-[465%] z-10" />
+        <FaArrowAltCircleRight className="text-purple-700 text-[50px] absolute right-[48%] top-[474%] z-10" />
         <div className="h-[100%] w-[5px] bg-purple-700"></div>
         <div className="flex flex-col justify-center items-center gap-[30px] h-[100%] w-[40%] pl-[20px]">
           <h2 className="text-3xl bg-linear-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent font-bold text-center">
@@ -161,7 +162,7 @@ const Education = () => {
              </div>
           </div>
         </div>
-        <FaArrowAltCircleLeft className="text-purple-700 text-[50px] absolute right-[48.5%] top-[520%] z-10" />
+        <FaArrowAltCircleLeft className="text-purple-700 text-[50px] absolute right-[48.5%] top-[540%] z-10" />
         <div className="h-[100%] w-[5px] bg-purple-700"></div>
         <div className="flex flex-row justify-center items-center h-[100%] w-[40%] p-[10px]">
           <img

@@ -8,6 +8,7 @@ import Particles from "./components/Animations/Particles"
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Education from "./components/Education/Education";
+import { TsParticles } from "./components/Animations/ts-particles";
 function App() {
   return (
     <>
