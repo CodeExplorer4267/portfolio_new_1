@@ -9,6 +9,7 @@ import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Education from "./components/Education/Education";
 import Achivement from "./components/Achivements/Achivement";
+import Testimonial from "./components/Testimonials/Testimonial";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Projects/>
         <Education/>
         <Achivement/>
+        <Testimonial/>
       </div>
     </>
   );
