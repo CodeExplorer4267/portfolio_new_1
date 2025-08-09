@@ -2,6 +2,8 @@ import { useRef, useEffect, useCallback, useState } from "react";
 import { gsap } from "gsap";
 import "./Magic-bento.css";
 import CountUp from "./Countup";
+import GradientText from "./Gradient-Text";
+import { AiFillStar } from "react-icons/ai";
 const DEFAULT_PARTICLE_COUNT = 12;
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
 const DEFAULT_GLOW_COLOR = "132, 0, 255";
@@ -15,8 +17,7 @@ const cardData = [
   },
   {
     color: "#060010",
-    title: "Dashboard",
-    description: "Centralized data view",
+    description: ["Solved 600+ Leetcode Problems", "1400+ Leetcode Rating"],
     label: "Overview",
   },
   {
@@ -33,21 +34,22 @@ const cardData = [
       "UI Design",
       "Graphic Design",
       "Database",
-      "Website Design"
+      "Website Design",
     ],
     label: "Services",
   },
   {
     color: "#060010",
-    title: "Integration",
-    description: "Connect favorite tools",
-    label: "Connectivity",
+    description: [
+      "2nd Place, Intercollege Coding Competition — November 2024 (Anweshan)",
+      "3rd Place, Intercollege Coding Competition — August 2024",
+    ],
+    label: "Awards",
   },
   {
     color: "#060010",
-    title: "Security",
-    description: "Enterprise-grade protection",
-    label: "Protection",
+    description: ["Strategic board games like Chess ♟️","Outdoor sports and activities 🏏"],
+    label: "Hobbies",
   },
 ];
 
@@ -560,32 +562,64 @@ const MagicBento = ({
                 enableMagnetism={enableMagnetism}
               >
                 <div className="card__header">
-                  <div
-                    className="card__label"
-                    style={{
-                      fontSize: "25px",
-                    }}
+                  <GradientText
+                    colors={[
+                      // "#40ffaa",
+                      "var(--color-fuchsia-500)",
+                      // "#4079ff",
+                      " var(--color-violet-500)",
+                      // "#40ffaa",
+                      // "#4079ff",
+                      "#40ffaa",
+                    ]}
+                    animationSpeed={3}
+                    showBorder={false}
+                    className="custom-class"
                   >
-                    {card.label}
-                  </div>
+                    <div
+                      className="card__label"
+                      style={{
+                        fontSize: "25px",
+                      }}
+                    >
+                      {card.label}
+                    </div>
+                  </GradientText>
                 </div>
                 <div className="card__content">
                   <h2 className="card__title">{card.title}</h2>
                   <div
                     className="card__description"
                     style={{
-                      fontSize: "20px",
+                      fontSize:
+                        card.label === "Awards"
+                          ? "15px"
+                          : card.label === "Projects"
+                          ? "40px"
+                          : "17px",
                       display: "flex",
+                      textAlign:card.label==="Projects"?"center":"",
                       flexDirection: "column",
                       gap: "30px",
+                      color:card.label==="Projects"?"rgb(167, 72, 255)":"",
+                      fontWeight:card.label==="Projects"?"bold":""
                     }}
                   >
                     {Array.isArray(card.description)
                       ? card.description.map((item, i) => (
-                          <p key={i}>
-                            {item}
-                            {/* {i !== card.description.length - 1 && ", "} */}
-                          </p>
+                          <div
+                            style={{
+                              display: "flex",
+                              flexDirection: "row",
+                              gap: "15px",
+                            }}
+                          >
+                            <AiFillStar color="rgba(132, 0, 255, 1)" />
+                            <p key={i}>
+                              {item}
+                              {/* {i !== card.description.length - 1 && ", "} */}
+                            </p>
+                          </div>
                         ))
                       : card.description}
                   </div>
