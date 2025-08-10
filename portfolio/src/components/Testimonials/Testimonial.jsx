@@ -55,6 +55,7 @@ const Testimonial = () => {
             })
         }
       </div> */}
+
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={30}
@@ -74,7 +75,6 @@ const Testimonial = () => {
                   {item.name}
                 </h2>
               </div>
-
               <p className="text-[15px]">{item.statement}</p>
             </div>
           </SwiperSlide>

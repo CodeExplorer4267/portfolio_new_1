@@ -10,6 +10,7 @@ import Projects from "./components/Projects/Projects";
 import Education from "./components/Education/Education";
 import Achivement from "./components/Achivements/Achivement";
 import Testimonial from "./components/Testimonials/Testimonial";
+import Contact from "./components/ContactMe/Contact";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Education/>
         <Achivement/>
         <Testimonial/>
+        <Contact/>
       </div>
     </>
   );
