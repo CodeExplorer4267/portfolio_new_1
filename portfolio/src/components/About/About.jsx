@@ -14,6 +14,14 @@ const fadeInRight = {
   hidden: { opacity: 0, x: 50 },
   visible: { opacity: 1, x: 0 },
 };
+const handleDownload=()=>{
+  const link=document.createElement('a');
+  link.href="/Myresume.pdf"
+  link.download="Resume"
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link)
+}
 const About = () => {
   return (
     <>
@@ -56,7 +64,7 @@ const About = () => {
             technologies to create seamless user experience and efficient
             solutions.
           </p>
-          <button className="w-[200px] h-[50px] bg-purple-600 text-white rounded-[20px] font-semibold floatEffect mt-1.5 ">
+          <button className="w-[200px] h-[50px] bg-purple-600 text-white rounded-[20px] font-semibold floatEffect mt-1.5 cursor-pointer" onClick={handleDownload}>
             Download CV
             <TbCloudDownload className="inline ml-2 text-2xl" />
           </button>

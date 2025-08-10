@@ -11,6 +11,7 @@ import Education from "./components/Education/Education";
 import Achivement from "./components/Achivements/Achivement";
 import Testimonial from "./components/Testimonials/Testimonial";
 import Contact from "./components/ContactMe/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Achivement/>
         <Testimonial/>
         <Contact/>
+        <Footer/>
       </div>
     </>
   );
