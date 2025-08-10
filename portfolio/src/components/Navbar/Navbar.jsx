@@ -15,10 +15,12 @@ const Navbar = () => {
            </div>
            <div className='flex gap-6 text-1xl font-bold'>
                <p className='nav-contents'>About</p>
-               <p className='nav-contents'>Skills</p>
-               <p className='nav-contents'>Experience</p>
-               <p className='nav-contents'>Project</p>
-               <p className='nav-contents'>Education</p>
+               <a href="#Skills"><p className='nav-contents'>Skills</p></a>
+               <a href="#Projects"><p className='nav-contents'>Projects</p></a>
+               <a href="#Education"><p className='nav-contents'>Education</p></a>
+               <a href="#Achive"><p className='nav-contents'>AchiveMents</p></a>
+               <a href="#Connect"><p className='nav-contents'>Connect</p></a>
+               
            </div>
            <div className='flex gap-5'>
                <a href="https://github.com/CodeExplorer4267"><FaGithub className='text-2xl cursor-pointer' /></a>

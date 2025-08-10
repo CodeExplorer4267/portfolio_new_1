@@ -7,6 +7,7 @@ import { SkillsInfo } from "../../constants";
 
 const Education = () => {
   return (
+    <section id="Education">
     <div className="flex flex-col justify-center items-center pt-[20px] pb-[30px] w-[100%]">
       <GradientText
         colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
@@ -173,6 +174,7 @@ const Education = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

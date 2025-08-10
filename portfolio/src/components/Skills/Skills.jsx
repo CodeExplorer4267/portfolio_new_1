@@ -8,6 +8,7 @@ import "./Skills.css";
 const Skills = () => {
   return (
     <>
+    <section id="Skills">
       <div
         className="flex flex-col justify-center items-center pt-[30px] pb-[30px] gap-[30px] w-[100%]"
       >
@@ -142,6 +143,7 @@ const Skills = () => {
           </Tilt>
         </div>
       </div>
+      </section>
     </>
   );
 };

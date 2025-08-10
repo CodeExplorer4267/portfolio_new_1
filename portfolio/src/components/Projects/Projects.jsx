@@ -11,6 +11,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 const Projects = () => {
   return (
     <>
+      <section id="Projects">
       <div className="flex flex-col justify-center items-center pt-[30px] pb-[30px] w-[100%]">
         <GradientText
           colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
@@ -295,6 +296,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 };

@@ -3,6 +3,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import GradientText from "../Animations/Gradient-Text";
 const Contact = () => {
   return (
+    <section id="Connect">
     <div className="h-[500px] w-[100%] flex flex-col items-center pb-[20px] ">
         <h1 className="text-4xl font-bold mb-[40px] bg-linear-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">Let's Talk</h1>
       <div className="flex flex-row justify-evenly items-center gap-[300px]">
@@ -25,6 +26,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

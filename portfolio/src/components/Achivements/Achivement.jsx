@@ -3,6 +3,7 @@ import MagicBento from "../Animations/Magic-bento";
 import GradientText from "../Animations/Gradient-Text";
 const Achivement = () => {
   return (
+    <section id="Achive">
     <div className="flex flex-col justify-center items-center w-[100%] pt-[30px] pb-[30px]">
       <GradientText
         colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
@@ -25,6 +26,7 @@ const Achivement = () => {
         glowColor="132, 0, 255"
       />
     </div>
+    </section>
   );
 };
 
