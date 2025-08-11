@@ -19,7 +19,7 @@ const Skills = () => {
           >
             <h1 className="text-4xl font-bold">Skills</h1>
           </GradientText>
-            <p className="text-1xl font-semibold text-white w-1/2">
+          <p className="text-1xl font-semibold text-white w-1/2">
             As a passionate full stack developer, I have honed a diverse set of
             skills across frontend and backend technologies. From crafting
             responsive, user-friendly interfaces to building robust server-side
@@ -28,7 +28,30 @@ const Skills = () => {
           </p>
           <div className="w-[60%] flex flex-row justify-center items-center flex-wrap gap-15 mt-[15px] text-white">
             <Tilt>
-              <motion.div className="card-animation ">
+              <motion.div
+                whileHover={{
+                  scale: 1.05,
+                  transition: {
+                    duration: 0.5,
+                    ease: "easeOut",
+                  },
+                }}
+                drag="x"
+                dragSnapToOrigin
+                initial={{
+                  opacity: 0,
+                  scale: 0.7,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  transition: {
+                    duration: 1.4,
+                    ease: "easeInOut",
+                  },
+                }}
+                className="card-animation "
+              >
                 <div className="w-[100%] h-[100%] bg-[#232129] rounded-[40px] p-5 z-99 relative">
                   <h2 className="text-center text-2xl mb-[20px] font-semibold">
                     {SkillsInfo[0].title}
@@ -56,7 +79,30 @@ const Skills = () => {
               </motion.div>
             </Tilt>
             <Tilt>
-              <div className="card-animation">
+              <motion.div
+                whileHover={{
+                  scale: 1.05,
+                  transition: {
+                    duration: 0.5,
+                    ease: "easeOut",
+                  },
+                }}
+                drag="x"
+                dragSnapToOrigin
+                initial={{
+                  opacity: 0,
+                  scale: 0.7,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  transition: {
+                    duration: 1.4,
+                    ease: "easeInOut",
+                  },
+                }}
+                className="card-animation"
+              >
                 <div className="w-[100%] h-[100%] bg-[#232129] rounded-[40px] p-5 z-99 relative">
                   <h2 className="text-center text-2xl mb-[20px] font-semibold">
                     {SkillsInfo[1].title}
@@ -81,10 +127,33 @@ const Skills = () => {
                     })}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </Tilt>
             <Tilt>
-              <div className="card-animation">
+              <motion.div
+                whileHover={{
+                  scale: 1.05,
+                  transition: {
+                    duration: 0.5,
+                    ease: "easeOut",
+                  },
+                }}
+                drag="x"
+                dragSnapToOrigin
+                initial={{
+                  opacity: 0,
+                  scale: 0.7,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  transition: {
+                    duration: 1.4,
+                    ease: "easeInOut",
+                  },
+                }}
+                className="card-animation"
+              >
                 <div className="w-[100%] h-[100%] bg-[#232129] rounded-[40px] p-5 z-99 relative">
                   <h2 className="text-center text-2xl mb-[20px] font-semibold">
                     {SkillsInfo[2].title}
@@ -109,10 +178,33 @@ const Skills = () => {
                     })}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </Tilt>
             <Tilt>
-              <div className="card-animation">
+              <motion.div
+                whileHover={{
+                  scale: 1.05,
+                  transition: {
+                    duration: 0.5,
+                    ease: "easeOut",
+                  },
+                }}
+                drag="x"
+                dragSnapToOrigin
+                initial={{
+                  opacity: 0,
+                  scale: 0.7,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  transition: {
+                    duration: 1.4,
+                    ease: "easeInOut",
+                  },
+                }}
+                className="card-animation"
+              >
                 <div className="w-[100%] h-[100%] bg-[#232129] rounded-[40px] p-5 z-99 relative">
                   <h2 className="text-center text-2xl mb-[20px] font-semibold">
                     {SkillsInfo[3].title}
@@ -137,7 +229,7 @@ const Skills = () => {
                     })}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </Tilt>
           </div>
         </div>
