@@ -31,7 +31,7 @@ const Projects = () => {
               <img
                 src="./Project_front_1.png"
                 alt=""
-                className="h-[155px] w-[244px] top-[266%] absolute floatEffect"
+                className="h-[155px] w-[244px] top-[268%] absolute floatEffect"
               />
             </div>
             <FaArrowAltCircleRight className="text-purple-700 text-[50px] absolute right-[48%] top-[275%] z-10" />
@@ -43,13 +43,13 @@ const Projects = () => {
               whileInView={{
                 scaleX: 1, // stretches fully
                 transition: {
-                  duration: 0.9,
+                  duration: 1,
                   ease: "easeInOut",
                 },
               }}
               viewport={{ once: true, amount: 0.3 }}
               style={{
-                transformOrigin:"left"
+                transformOrigin: "left",
               }}
               className="flex flex-col items-center gap-[40px] w-[40%] p-[5px]"
             >
@@ -72,47 +72,95 @@ const Projects = () => {
                 <h2 className="text-violet-600 font-bold text-[20px]">
                   Tech stack:
                 </h2>
-                <div className="flex flex-col justify-center items-center gap-1">
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src={SkillsInfo[0].skills[4].logo}
                     alt=""
                     className="h-[40px] w-auto"
                   />
                   <p className="text-white text-[14px] font-bold">React Js</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src={SkillsInfo[1].skills[1].logo}
                     alt=""
                     className="h-[40px] w-auto"
                   />
                   <p className="text-white text-[14px] font-bold">Node Js</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src={SkillsInfo[1].skills[2].logo}
                     alt=""
                     className="h-[40px] w-auto"
                   />
                   <p className="text-white text-[14px] font-bold">Express Js</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src={SkillsInfo[1].skills[3].logo}
                     alt=""
                     className="h-[40px] w-auto"
                   />
                   <p className="text-white text-[14px] font-bold">My SQL</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src="./socket_Io_logo.png"
                     alt=""
                     className="h-[40px] w-auto"
                   />
                   <p className="text-white text-[14px] font-bold">Socket IO</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.1,
+                  }}
+                  whileTap={{
+                    scale: 0.95,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src="./jwt_logo.png"
                     alt=""
@@ -121,12 +169,31 @@ const Projects = () => {
                   <p className="text-white text-[14px] font-bold">
                     Json Web Token
                   </p>
-                </div>
+                </motion.div>
               </div>
             </motion.div>
           </div>
           <div className="first w-[90%] h-[400px] flex flex-row justify-evenly items-center">
-            <div className="flex flex-col items-center gap-[40px] w-[40%] p-[5px]">
+            <motion.div
+              initial={{
+                scaleX: 0,
+              }}
+              whileInView={{
+                scaleX: 1,
+                transition: {
+                  duration: 1,
+                  ease: "easeInOut",
+                },
+              }}
+              viewport={{
+                once: true,
+                amount: 0.3,
+              }}
+              style={{
+                transformOrigin: "right",
+              }}
+              className="flex flex-col items-center gap-[40px] w-[40%] p-[5px]"
+            >
               <h2 className="text-3xl bg-linear-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent font-bold">
                 Social-Nest
               </h2>
@@ -158,31 +225,63 @@ const Projects = () => {
                 <h2 className="text-violet-600 font-bold text-[20px]">
                   Tech stack:
                 </h2>
-                <div className="flex flex-col justify-center items-center gap-1">
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src={SkillsInfo[0].skills[4].logo}
                     alt=""
                     className="h-[40px] w-auto"
                   />
                   <p className="text-white text-[14px] font-bold">React Js</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src={SkillsInfo[1].skills[1].logo}
                     alt=""
                     className="h-[40px] w-auto"
                   />
                   <p className="text-white text-[14px] font-bold">Node Js</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src={SkillsInfo[1].skills[2].logo}
                     alt=""
                     className="h-[40px] w-auto"
                   />
                   <p className="text-white text-[14px] font-bold">Express Js</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src="./material_ui.png"
                     alt=""
@@ -191,16 +290,32 @@ const Projects = () => {
                   <p className="text-white text-[14px] font-bold">
                     Material UI
                   </p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src={SkillsInfo[1].skills[4].logo}
                     alt=""
                     className="h-[40px] w-auto"
                   />
                   <p className="text-white text-[14px] font-bold">Mongo DB</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src={SkillsInfo[0].skills[6].logo}
                     alt=""
@@ -209,8 +324,16 @@ const Projects = () => {
                   <p className="text-white text-[14px] font-bold">
                     Redux Toolkit
                   </p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src="./jwt_logo.png"
                     alt=""
@@ -219,17 +342,25 @@ const Projects = () => {
                   <p className="text-white text-[14px] font-bold">
                     Json Web Token
                   </p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src="./cloudinary_logo.png"
                     alt=""
                     className="h-[40px] w-auto"
                   />
                   <p className="text-white text-[14px] font-bold">Cloudinary</p>
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
             <FaArrowAltCircleLeft className="text-purple-700 text-[50px] absolute right-[48.5%] top-[327%] z-10" />
             <div className="w-[5px] h-[100%] bg-purple-700"></div>
             <div className="w-[40%] flex flex-row justify-center items-center">
@@ -241,7 +372,7 @@ const Projects = () => {
               <img
                 src="./social_project_logo.png"
                 alt=""
-                className="h-[155px] w-[244px] top-[321%] absolute floatEffect"
+                className="h-[155px] w-[244px] top-[323%] absolute floatEffect"
               />
             </div>
           </div>
@@ -255,12 +386,28 @@ const Projects = () => {
               <img
                 src="./food_del_screen_view.png"
                 alt=""
-                className="h-[155px] w-[244px] top-[376%] absolute floatEffect"
+                className="h-[155px] w-[244px] top-[377%] absolute floatEffect"
               />
             </div>
             <FaArrowAltCircleRight className="text-purple-700 text-[50px] absolute right-[48%] top-[385%] z-10" />
             <div className="w-[5px] h-[100%] bg-purple-700"></div>
-            <div className="flex flex-col items-center gap-[40px] w-[40%] p-[5px]">
+            <motion.div
+              initial={{
+                scaleX: 0,
+              }}
+              whileInView={{
+                scaleX: 1, // stretches fully
+                transition: {
+                  duration: 1,
+                  ease: "easeInOut",
+                },
+              }}
+              viewport={{ once: true, amount: 0.3 }}
+              style={{
+                transformOrigin: "left",
+              }}
+              className="flex flex-col items-center gap-[40px] w-[40%] p-[5px]"
+            >
               <h2 className="text-3xl bg-linear-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent font-bold">
                 Foodie-Fiesta
               </h2>
@@ -280,48 +427,88 @@ const Projects = () => {
                 <h2 className="text-violet-600 font-bold text-[20px]">
                   Tech stack:
                 </h2>
-                <div className="flex flex-col justify-center items-center gap-1">
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src={SkillsInfo[0].skills[4].logo}
                     alt=""
                     className="h-[40px] w-auto"
                   />
                   <p className="text-white text-[14px] font-bold">React Js</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src={SkillsInfo[1].skills[1].logo}
                     alt=""
                     className="h-[40px] w-auto"
                   />
                   <p className="text-white text-[14px] font-bold">Node Js</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src={SkillsInfo[1].skills[2].logo}
                     alt=""
                     className="h-[40px] w-auto"
                   />
                   <p className="text-white text-[14px] font-bold">Express Js</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src={SkillsInfo[1].skills[4].logo}
                     alt=""
                     className="h-[40px] w-auto"
                   />
                   <p className="text-white text-[14px] font-bold">Mongo DB</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-1">
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.07,
+                  }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
+                  className="flex flex-col justify-center items-center gap-1"
+                >
                   <img
                     src={SkillsInfo[0].skills[1].logo}
                     alt=""
                     className="h-[40px] w-auto"
                   />
                   <p className="text-white text-[14px] font-bold">CSS</p>
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
