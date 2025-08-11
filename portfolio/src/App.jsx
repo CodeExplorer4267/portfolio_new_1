@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
-import Particles from "./components/Animations/Particles"
+import Particles from "./components/Animations/Particles";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Education from "./components/Education/Education";
@@ -27,18 +27,17 @@ function App() {
             moveParticlesOnHover={true}
             alphaParticles={false}
             disableRotation={false}
-            
           />
         </div>
         <Navbar />
         <About />
-        <Skills/>
-        <Projects/>
-        <Education/>
-        <Achivement/>
-        <Testimonial/>
-        <Contact/>
-        <Footer/>
+        <Skills />
+        <Projects />
+        <Education />
+        <Achivement />
+        <Testimonial />
+        <Contact />
+        <Footer />
       </div>
     </>
   );
