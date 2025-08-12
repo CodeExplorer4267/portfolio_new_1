@@ -5,3 +5,8 @@ canvas {
 body{
    scroll-behavior: smooth;
 }
+.glow-icon {
+  filter: drop-shadow(0 0 4px rgba(180, 120, 255, 0.8))
+          drop-shadow(0 0 6px rgba(180, 120, 255, 0.5));
+  transition: filter 0.3s ease-in-out;
+}
