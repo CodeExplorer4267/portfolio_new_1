@@ -2,7 +2,7 @@ import React from "react";
 import "./Projects.css";
 import GradientText from "../Animations/Gradient-Text";
 import { SkillsInfo } from "../../constants";
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import "animate.css/animate.compat.css";
@@ -22,7 +22,8 @@ const Projects = () => {
             <h1 className="text-4xl font-bold mb-[40px]">Projects</h1>
           </GradientText>
           <div className="first w-[90%] h-[400px] flex flex-row justify-evenly items-center">
-            <div className="w-[40%] flex flex-row justify-center items-center">
+            <div 
+            className="w-[40%] flex flex-row justify-center items-center">
               <img
                 src="./laptop_img.png"
                 alt=""
@@ -43,7 +44,7 @@ const Projects = () => {
               whileInView={{
                 scaleX: 1, // stretches fully
                 transition: {
-                  duration: 1,
+                  duration: 1.4,
                   ease: "easeInOut",
                 },
               }}
@@ -181,7 +182,7 @@ const Projects = () => {
               whileInView={{
                 scaleX: 1,
                 transition: {
-                  duration: 1,
+                  duration: 1.4,
                   ease: "easeInOut",
                 },
               }}
@@ -398,7 +399,7 @@ const Projects = () => {
               whileInView={{
                 scaleX: 1, // stretches fully
                 transition: {
-                  duration: 1,
+                  duration: 1.4,
                   ease: "easeInOut",
                 },
               }}
