@@ -22,8 +22,8 @@ const cardData = [
   },
   {
     color: "#060010",
-    title: "Collaboration",
     description: "Work together seamlessly",
+    image: "./achivement.jpg",
     label: "Teamwork",
   },
   {
@@ -48,7 +48,10 @@ const cardData = [
   },
   {
     color: "#060010",
-    description: ["Strategic board games like Chess ♟️","Outdoor sports and activities 🏏"],
+    description: [
+      "Strategic board games like Chess ♟️",
+      "Outdoor sports and activities 🏏",
+    ],
     label: "Hobbies",
   },
 ];
@@ -598,13 +601,24 @@ const MagicBento = ({
                           ? "40px"
                           : "17px",
                       display: "flex",
-                      textAlign:card.label==="Projects"?"center":"",
+                      textAlign: card.label === "Projects" ? "center" : "",
                       flexDirection: "column",
                       gap: "30px",
-                      color:card.label==="Projects"?"rgb(167, 72, 255)":"",
-                      fontWeight:card.label==="Projects"?"bold":""
+                      color:
+                        card.label === "Projects" ? "rgb(167, 72, 255)" : "",
+                      fontWeight: card.label === "Projects" ? "bold" : "",
                     }}
                   >
+                    {card.label === "Teamwork" ? (
+                      <img
+                        src={card.image}
+                        className="h-[270px] w-[210px] rounded-[20px] border-4 border-purple-500"
+                        alt="Teamwork"
+                        style={{
+                          placeSelf:"center"
+                        }}
+                      />
+                    ) : null}
                     {Array.isArray(card.description)
                       ? card.description.map((item, i) => (
                           <div
